@@ -6,6 +6,7 @@ const BASE_URL2 = 'https://dog.ceo/api/breeds/image/random'
 // facts to display
 const facts = document.querySelector(".facts")
 
+
 // Fetch data from API
 async function change() {
     fetch(`${BASE_URL}/facts`)
@@ -14,6 +15,8 @@ async function change() {
         // change text to display facts
         console.log(data.data)
         // You need to call the response object to actually get the data
-        facts.textContent = data.data[0].attributes.body
+        facts.textContent = data.data[0].attributes.body;
+        
+        
     })
 }

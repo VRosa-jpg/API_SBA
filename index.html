@@ -7,11 +7,20 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src="script.js"></script>
     <script defer src="script2.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="d-flex justify-content-center vh-100 vw-100">
-        <div class="card" style="width: 18rem;">
+
+<body >
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    <div class="d-flex justify-content-center vh-100"> 
+        <div class="card mt-5 design" style="width: 18rem; height: fit-content;">
             <img class="card-img-top" src=" " alt="Card image cap" onmouseover="chang()">
             <div class="card-body">
             <h5 class="card-title">Did you know...</h5>
@@ -19,7 +28,8 @@
             <button class="btn btn-primary" onclick="change()">Dog Facts</button>
             </div>
         </div>
-    </div>
+    </div> 
+    
     
     
 </body>
